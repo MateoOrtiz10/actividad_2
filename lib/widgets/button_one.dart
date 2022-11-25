@@ -9,7 +9,7 @@ class ButtonOne extends StatelessWidget {
         minWidth: 333,
         height: 56,        
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),                
-        onPressed: (){Navigator.pushNamed(context, 'welcomeScreen');},
+        onPressed: (){Navigator.pushNamed(context, 'welcomeScreenOne');},
         color: Color.fromRGBO(230, 230, 230, 1),
         child: Text('Iniciar sesión',
         style: TextStyle(color: Color.fromRGBO(26, 26, 26, 1), fontSize: 22, fontFamily: 'Montserrat')),
