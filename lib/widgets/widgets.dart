@@ -1,3 +1,6 @@
+export 'package:actividad_2/widgets/list_option.dart';
+export 'package:actividad_2/widgets/image_music.dart';
+export 'package:actividad_2/widgets/card_music.dart';
 export 'package:actividad_2/widgets/bar_buttons.dart';
 export 'package:actividad_2/widgets/black_tesla.dart';
 export 'package:actividad_2/widgets/black_tesla2.dart';

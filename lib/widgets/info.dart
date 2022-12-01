@@ -13,7 +13,7 @@ class Info extends StatelessWidget {
         children: [
           Row(                      
             mainAxisAlignment: MainAxisAlignment.end,
-            children: [              
+            children: [                            
               Avatar(),
             ],
           ),
@@ -36,15 +36,15 @@ class Info extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
             SizedBox(height: 15),
-            Text('Estacionado', style: TextStyle(color: Colors.white, fontFamily: 'Montserrat', fontSize: 18)),
+            Text('Estacionado', style: TextStyle(color: Colors.white, fontFamily: 'Montserrat', fontSize: 18)),            
             ],
           ), 
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: [
+            children: [              
               FadeInImage(
                 width: 332,
-                height: 131,
+                height: 150,
                 placeholder: AssetImage('assets/images/loading.gif'),
                 image: AssetImage('assets/images/Imagen3.png'),
               )
