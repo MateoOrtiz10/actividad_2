@@ -11,9 +11,10 @@ class PrincipalScreen extends StatelessWidget {
         decoration: BoxDecoration(
           color: Colors.black,
         ),
-        child: Row(                    
+        child: Column(                    
           children: [                 
-            Info()
+            Info(),             
+            BarButton(),
           ],
         ),        
     )
