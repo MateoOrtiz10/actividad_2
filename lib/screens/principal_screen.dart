@@ -1,7 +1,6 @@
 import 'package:actividad_2/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 
-
 class PrincipalScreen extends StatelessWidget {
   const PrincipalScreen({super.key});
 

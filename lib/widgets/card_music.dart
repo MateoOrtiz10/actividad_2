@@ -1,5 +1,6 @@
 import 'package:actividad_2/widgets/widgets.dart';
 import 'package:flutter/material.dart';
+import 'package:audioplayers/audioplayers.dart';
 
 class CardMusic extends StatefulWidget {
   const CardMusic({super.key});
@@ -20,17 +21,17 @@ class _CardMusicState extends State<CardMusic> {
       clipBehavior: Clip.antiAlias,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(18)),
       margin: EdgeInsets.all(28),                    
-      child: Column(        
+      child: Column(                
         children: [
           const ListTile(            
             leading: ImageMusic(),            
-            title: Text('Sólo estoy sobreviviendo', style: TextStyle(color: Colors.white, fontFamily: 'Montserrat', fontSize: 15)),
-            subtitle: Text('El Cuarteto de Nos', style: TextStyle(color: Colors.grey, fontFamily: 'Montserrat', fontSize: 15)),
+            title: Text('Sólo estoy sobreviviendo', style: TextStyle(color: Colors.white, fontFamily: 'Montserrat', fontSize: 15),textAlign: TextAlign.center),
+            subtitle: Text('El Cuarteto de Nos', style: TextStyle(color: Colors.grey, fontFamily: 'Montserrat', fontSize: 15),textAlign: TextAlign.center),
           ),
           Padding(
             padding: const EdgeInsets.only(left: 12),
             child: Row(
-              mainAxisAlignment: MainAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [                
                   Row(
                     children: [
@@ -49,10 +50,31 @@ class _CardMusicState extends State<CardMusic> {
                         ),
                         Text('-2:19', style: TextStyle(color: Colors.grey, fontFamily: 'Montserrat', fontSize: 13)),                       
                     ],
-                  )                  
+                  ),                 
               ],
             ),            
-          ),          
+          ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Row(
+                  children: [
+                    IconButton(
+                      onPressed: (){},
+                      icon: Icon(Icons.arrow_back_ios)
+                      )
+                  ],
+                ),
+                IconButton(
+                onPressed: (){},
+                icon: Icon(Icons.pause_circle_filled_rounded)
+                ),
+                IconButton(
+                onPressed: (){},
+                icon: Icon(Icons.arrow_forward_ios_rounded)
+                ),
+            ],
+          )                           
         ],
       ),
     );
