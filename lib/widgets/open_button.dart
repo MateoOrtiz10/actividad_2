@@ -15,7 +15,7 @@ class OpenButton extends StatelessWidget {
           children:[ Text('Abrir Auto',
           style: TextStyle(color: Color.fromRGBO(26, 26, 26, 1), fontSize: 18, fontFamily: 'Montserrat')),
           SizedBox(width: 10),
-          Image(image: AssetImage('assets/images/padlock.png')),          
+          Icon(Icons.lock, color: Colors.black),          
           ],
         )        
       );        

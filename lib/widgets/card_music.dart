@@ -62,7 +62,7 @@ class _CardMusicState extends State<CardMusic> {
                     children: [
                       IconButton(
                         onPressed: (){},
-                        icon: Icon(Icons.arrow_back_ios)
+                        icon: Icon(Icons.skip_previous_rounded)
                         )
                     ],
                   ),
@@ -72,7 +72,7 @@ class _CardMusicState extends State<CardMusic> {
                   ),
                   IconButton(
                   onPressed: (){},
-                  icon: Icon(Icons.arrow_forward_ios_rounded)
+                  icon: Icon(Icons.skip_next_rounded)
                   ),
               ],
           ),

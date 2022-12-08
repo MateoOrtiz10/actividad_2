@@ -14,7 +14,9 @@ class PrincipalScreen extends StatelessWidget {
         child: ListView(     
           children: [
             Info(),
+            BarButton(),
             CardMusic(),
+            OptionsMenu()
           ],                                                      
         ),
         

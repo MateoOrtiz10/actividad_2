@@ -1,4 +1,5 @@
 
+export 'package:actividad_2/widgets/options_menu.dart';
 export 'package:actividad_2/widgets/image_music.dart';
 export 'package:actividad_2/widgets/card_music.dart';
 export 'package:actividad_2/widgets/bar_buttons.dart';
