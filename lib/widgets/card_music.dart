@@ -26,7 +26,7 @@ class _CardMusicState extends State<CardMusic> {
           const ListTile(            
             leading: ImageMusic(),            
             title: Text('Sólo estoy sobreviviendo', style: TextStyle(color: Colors.white, fontFamily: 'Montserrat', fontSize: 15),textAlign: TextAlign.center),
-            subtitle: Text('El Cuarteto de Nos', style: TextStyle(color: Colors.grey, fontFamily: 'Montserrat', fontSize: 15),textAlign: TextAlign.center),
+            subtitle: Text('El Cuarteto de Nos', style: TextStyle(color: Colors.grey, fontFamily: 'Montserrat', fontSize: 15), textAlign: TextAlign.center),            
           ),
           Padding(
             padding: const EdgeInsets.only(left: 12),
@@ -49,34 +49,36 @@ class _CardMusicState extends State<CardMusic> {
                         : null
                         ),
                         Text('-2:19', style: TextStyle(color: Colors.grey, fontFamily: 'Montserrat', fontSize: 13)),                       
-                    ],
-                  ),                 
+                    ],                    
+                  ),                                   
               ],
             ),            
+          ),          
+            Container(                            
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Row(
+                    children: [
+                      IconButton(
+                        onPressed: (){},
+                        icon: Icon(Icons.arrow_back_ios)
+                        )
+                    ],
+                  ),
+                  IconButton(
+                  onPressed: (){},
+                  icon: Icon(Icons.pause_circle_filled_rounded)
+                  ),
+                  IconButton(
+                  onPressed: (){},
+                  icon: Icon(Icons.arrow_forward_ios_rounded)
+                  ),
+              ],
           ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Row(
-                  children: [
-                    IconButton(
-                      onPressed: (){},
-                      icon: Icon(Icons.arrow_back_ios)
-                      )
-                  ],
-                ),
-                IconButton(
-                onPressed: (){},
-                icon: Icon(Icons.pause_circle_filled_rounded)
-                ),
-                IconButton(
-                onPressed: (){},
-                icon: Icon(Icons.arrow_forward_ios_rounded)
-                ),
-            ],
-          )                           
-        ],
-      ),
+          ),                   
+        ],                     
+      ),            
     );
   }
 }

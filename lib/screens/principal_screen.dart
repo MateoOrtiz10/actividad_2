@@ -7,18 +7,17 @@ class PrincipalScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
+      body: Container(        
         decoration: BoxDecoration(
           color: Colors.black,
         ),
-        child: ListView(                              
-          children: [                 
-            Info(),             
-            BarButton(),            
+        child: ListView(     
+          children: [
+            Info(),
             CardMusic(),
-            ListOption()            
-          ],
-        ),        
+          ],                                                      
+        ),
+        
     )
     );
   }
