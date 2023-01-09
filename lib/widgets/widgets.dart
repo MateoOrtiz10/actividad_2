@@ -1,4 +1,9 @@
 
+export 'package:actividad_2/widgets/navigation_bar.dart';
+export 'package:actividad_2/widgets/text_open2.dart';
+export 'package:actividad_2/widgets/text_open.dart';
+export 'package:actividad_2/widgets/white_tesla2.dart';
+export 'package:actividad_2/widgets/control_return.dart';
 export 'package:actividad_2/widgets/options_menu.dart';
 export 'package:actividad_2/widgets/image_music.dart';
 export 'package:actividad_2/widgets/card_music.dart';
@@ -14,3 +19,4 @@ export 'package:actividad_2/widgets/info.dart';
 export 'package:actividad_2/widgets/open_button.dart';
 export 'package:actividad_2/widgets/welcome_toback.dart';
 export 'package:actividad_2/widgets/white_tesla.dart';
+

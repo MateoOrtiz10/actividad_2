@@ -15,7 +15,7 @@ class OptionsMenu extends StatelessWidget {
           ),
           title: Text('Controles', style: TextStyle(color: Colors.white, fontFamily: 'Montserrat', fontSize: 18)),              
           trailing: Icon(Icons.arrow_forward_ios, size: 18, color: Colors.grey,),
-          onTap: (){},
+          onTap: (){Navigator.pushNamed(context, 'controlScreen');},
         ),
         ListTile(          
           leading: Icon(

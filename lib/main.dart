@@ -13,7 +13,8 @@ class MyApp extends StatelessWidget {
       routes: {
         'welcomeScreenOne' : (context) => WelcomeScreenOne(),
         'welcomeScreenTwo' :(context) => WelcomeScreenTwo(),  
-        'principalScreen' :(context) => PrincipalScreen(),      
+        'principalScreen' :(context) => PrincipalScreen(),
+        'controlScreen' :(context) => ControlScreen(),              
       },
       debugShowCheckedModeBanner: false,
       title: 'Material App',
