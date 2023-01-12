@@ -5,11 +5,11 @@ class ControlReturn extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
+    return Row(      
       mainAxisAlignment: MainAxisAlignment.start,
-      children: [
+      children: [        
         IconButton(onPressed: (){Navigator.pushNamed(context, 'principalScreen');}, icon: Icon(Icons.arrow_back_ios)),
-        Text('Controles', style: TextStyle(color: Colors.white, fontFamily: 'Montserrat', fontSize: 25),)
+        Text('Controles', style: TextStyle(color: Colors.white, fontFamily: 'Montserrat', fontSize: 22),)
       ],
     );
   }

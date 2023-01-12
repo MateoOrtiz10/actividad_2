@@ -1,9 +1,22 @@
-import 'package:actividad_2/widgets/text_open.dart';
 import 'package:actividad_2/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 
-class ControlScreen extends StatelessWidget {
+class ControlScreen extends StatefulWidget {
   const ControlScreen({super.key});
+
+  @override
+  State<ControlScreen> createState() => _ControlScreenState();
+}
+
+class _ControlScreenState extends State<ControlScreen> {
+
+  int _selectedIndex = 0;
+  void _onItemTapped(int index) {
+    setState(() {
+      _selectedIndex = index;
+    });
+  }
+
 
   @override
   Widget build(BuildContext context) {
@@ -23,13 +36,36 @@ class ControlScreen extends StatelessWidget {
             ControlReturn(),
             SizedBox(height: 60),
             TextOpen(), 
-            SizedBox(height: 250),
+            SizedBox(height: 220),
             Icon(Icons.lock, color: Colors.white),
             SizedBox(height: 180),
             TextOpen2(),                       
           ],                    
         ),                        
-    ),       
+    ),     
+    bottomNavigationBar: BottomNavigationBar(items: const <BottomNavigationBarItem>[
+      BottomNavigationBarItem(
+        icon: Icon(Icons.highlight),
+        label: 'Flash',
+        backgroundColor: Colors.black        
+      ),
+      BottomNavigationBarItem(
+        icon: Icon(Icons.campaign),
+        label: 'Claxon',        
+      ),
+      BottomNavigationBarItem(
+        icon: Icon(Icons.electric_car),
+        label: 'Iniciar',        
+      ),
+      BottomNavigationBarItem(
+        icon: Icon(Icons.rectangle),
+        label: 'Vent',        
+      ),
+    ],
+    currentIndex: _selectedIndex, 
+    selectedItemColor: Colors.blue,
+    onTap: _onItemTapped,
+    )
     );
   }
 }
