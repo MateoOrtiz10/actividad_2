@@ -22,7 +22,7 @@ class _ControlScreenState extends State<ControlScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(      
-      padding: EdgeInsets.symmetric(vertical: 45, horizontal: 5) ,
+      padding: EdgeInsets.symmetric(vertical: 40, horizontal: 15) ,
       decoration: BoxDecoration(        
           image: DecorationImage(
           image:  AssetImage('assets/images/Imagen5.png'),
@@ -36,9 +36,11 @@ class _ControlScreenState extends State<ControlScreen> {
             ControlReturn(),
             SizedBox(height: 60),
             TextOpen(), 
-            SizedBox(height: 220),
+            SizedBox(height: 200),
             Icon(Icons.lock, color: Colors.white),
-            SizedBox(height: 120),
+            SizedBox(height: 50),
+            BoltCar(),
+            SizedBox(height: 50),
             TextOpen2(),                       
           ],                    
         ),                        
