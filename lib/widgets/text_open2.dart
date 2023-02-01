@@ -5,6 +5,6 @@ class TextOpen2 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text('Abrir', style: TextStyle(color:Colors.white, fontFamily: 'Montserrat', fontSize: 15),);
+    return TextButton( child: Text('Abrir', style: TextStyle(color:Colors.white, fontFamily: 'Montserrat', fontSize: 15)), onPressed: () {} );
   }
 }

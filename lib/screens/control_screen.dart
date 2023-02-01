@@ -38,7 +38,7 @@ class _ControlScreenState extends State<ControlScreen> {
             TextOpen(), 
             SizedBox(height: 220),
             Icon(Icons.lock, color: Colors.white),
-            SizedBox(height: 180),
+            SizedBox(height: 120),
             TextOpen2(),                       
           ],                    
         ),                        

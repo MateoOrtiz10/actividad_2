@@ -39,7 +39,6 @@ class BarButton extends StatelessWidget {
         ),
         SizedBox(width: 30),
           MaterialButton(
-          focusColor: Colors.blue,
           minWidth: 30,                                
           onPressed: (){},        
           child: Row(
