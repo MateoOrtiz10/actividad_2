@@ -11,9 +11,19 @@ class CardMusic extends StatefulWidget {
 
 class _CardMusicState extends State<CardMusic> {
 
-  
+  var icono = Icon(Icons.pause_circle_filled, color: Colors.white);
   double _sliderValue = 100;
   bool _sliderEnabled = true;
+
+  void cambiopause(){
+    icono = Icon(Icons.play_circle, color: Colors.white,);
+    setState(() {});
+  }
+
+  void cambioplay(){
+    icono = Icon(Icons.pause_circle_filled, color: Colors.white,);
+    setState(() {});
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -66,9 +76,10 @@ class _CardMusicState extends State<CardMusic> {
                         )
                     ],
                   ),
-                  IconButton(
-                  onPressed: (){},
-                  icon: Icon(Icons.pause_circle_filled_rounded)
+                  TextButton(
+                  child: icono,
+                  onPressed: () => cambiopause(),
+                  onLongPress: () => cambioplay(),
                   ),
                   IconButton(
                   onPressed: (){},
@@ -76,6 +87,7 @@ class _CardMusicState extends State<CardMusic> {
                   ),
               ],
           ),
+          
           ),                   
         ],                     
       ),            
