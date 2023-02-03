@@ -51,15 +51,18 @@ class _ControlScreenState extends State<ControlScreen> {
       ),
       BottomNavigationBarItem(
         icon: Icon(Icons.campaign),
-        label: 'Claxon',        
+        label: 'Claxon',
+        backgroundColor: Colors.black        
       ),
       BottomNavigationBarItem(
         icon: Icon(Icons.electric_car),
-        label: 'Iniciar',        
+        label: 'Iniciar',
+        backgroundColor: Colors.black        
       ),
       BottomNavigationBarItem(
-        icon: Icon(Icons.rectangle),
-        label: 'Vent',        
+        icon: Icon(Icons.curtains),
+        label: 'Vent',
+        backgroundColor: Colors.black        
       ),
     ],
     currentIndex: _selectedIndex, 
